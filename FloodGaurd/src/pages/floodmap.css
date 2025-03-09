@@ -1,0 +1,41 @@
+.Floodmap {
+    display: flex; 
+    height: 90dvh; 
+    margin-top:10dvh;
+}
+
+.Floodmap .options {
+    width: 250px; 
+    top:10dvh;
+    background-color: white; 
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+.Floodmap .options nav ul {
+    list-style: none;
+    padding:2dvw;
+}
+
+.Floodmap .options nav ul li {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    padding: 1dvh;
+    cursor: pointer;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     background-color: #f0f0f0; 
+}
+
+iframe {
+    width: 78dvw;
+    overflow: hidden;
+    height: 90%;
+    border: none;
+}

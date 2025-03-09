@@ -1,0 +1,29 @@
+.home_header li{
+    list-style: none;
+    cursor: pointer;
+}
+.home_header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4dvw;
+}
+
+.home_header{
+    height: 10dvh;
+    position: fixed;
+    margin: 0.5dvh;
+    top:0dvh;
+    width: 98dvw;
+    font-size: 22px;
+    text-align: center;
+    background-color: #9c93937e;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.home_header .logo{
+    cursor: pointer;
+}

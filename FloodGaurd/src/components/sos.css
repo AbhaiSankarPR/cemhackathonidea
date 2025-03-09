@@ -1,0 +1,23 @@
+.sos {
+    color: red;
+    position: fixed; /* Ensures it stays in the bottom-left even when scrolling */
+    background-color: rgb(172, 176, 180);
+    font-size: 30px;
+    height: 15dvh;
+    width: 15dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    bottom:10dvh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    left: 2dvw;
+    transition: all 0.3s;
+}
+.sos:hover {
+    background-color: rgba(196, 0, 0, 0.822);
+    color: white;
+}
