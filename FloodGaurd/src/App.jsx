@@ -9,6 +9,7 @@ import Home from './pages/home.jsx'
 import Floodmap from './pages/Floodmap.jsx'
 import MissingPerson from './pages/MissingPerson.jsx'
 import SearchMissing from './pages/SearchMissing.jsx'
+import Chatbot from './pages/Chatbot.jsx'
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/Floodmap" element={<Floodmap/>} />
                 <Route path="/MissingPerson" element={<MissingPerson/>} />
                 <Route path="/SearchMissing" element={<SearchMissing/>} />
+                <Route path="/Chatbot" element={<Chatbot/>}/>
             </Routes>
     </Router>
     </>

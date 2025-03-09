@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     width: 70dvw;
-    height: 65dvh;
+    height: 60dvh;
     background: #968d8d91;
     border-radius: 10px;
     overflow: hidden;
@@ -38,24 +38,25 @@
     width: 30%;
 }
 
-.container-missing2 .search-details .image svg{
+.container-missing2 .search-details .image svg {
     border-radius: 50%;
     /* width: 200px; */
     /* height: 200px; */
     width: 15dvw;
-    height: 30dvh;
+    height: 32dvh;
     margin-left: 6dvw;
     fill: black;
-background-color: whitesmoke;
+    background-color: whitesmoke;
 }
 
 .container-missing2 .search-details .details {
-    flex-grow: 1; 
+    flex-grow: 1;
     padding: 10px;
     padding-top: 10dvh;
     border-radius: 8px;
     color: white;
 }
+
 .container-missing2 .search-details .details .buttons {
     display: flex;
     justify-content: space-around;
@@ -63,17 +64,20 @@ background-color: whitesmoke;
     gap: 10px;
     margin-top: 10px;
 }
-.container-missing2 .search-details .details .ageandmark{
+
+.container-missing2 .search-details .details .ageandmark {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    gap:15%;
+    gap: 15%;
     margin-top: 10px;
 }
-.container-missing2 .search-details .details .name{
+
+.container-missing2 .search-details .details .name {
     text-align: center;
 }
-.details input{
+
+.details input {
     padding: 5px;
     width: 29%;
     border-radius: 5px;
@@ -81,6 +85,19 @@ background-color: whitesmoke;
     background-color: aliceblue;
     color: black;
 }
-.name input{
+
+.name input {
     width: 75%;
+}
+
+#searchitem {
+    width: 60%;
+    height: 80%;
+    font-size: 80%;
+    background-color: transparent;
+    color: black;
+    border: solid 0.2px rgb(119, 116, 116);
+    border-radius: 20px;
+    padding-left: 2%;
+    font-family:fantasy;
 }

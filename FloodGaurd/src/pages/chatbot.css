@@ -1,0 +1,38 @@
+.chatbotpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+}
+.chatbotpage .container{
+    display: flex;
+    justify-content: space-between;
+    width: 80dvw;
+    height: 70dvh;
+    background: #968d8d91;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.chatbotpage .chatai{
+    width: 20dvw;
+    padding: 3dvh;
+    font-size: 4dvh;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+.chatai svg{
+    fill: black;
+
+}
+.chatbotpage .chatarea{
+    background-color: rgb(255, 255, 255);
+    right: 0;
+    width: 70dvw;
+    margin: 6dvh 3dvh;
+    border-radius: 3dvh;
+    height: 80%;
+    
+
+}
