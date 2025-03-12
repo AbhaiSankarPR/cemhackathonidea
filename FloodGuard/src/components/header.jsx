@@ -13,9 +13,9 @@ function Header() {
                     <ul>
                         <li onClick={()=>navigate("/Floodmap")}>Live Flood map</li>
                         <li onClick={()=>navigate("/MissingPerson")}>Missing person</li>
-                        <li>Volunteer</li>
+                        <li onClick={()=>navigate("/Volunteer")} >Volunteer</li>
                         <li>Donate</li>
-                        <li>About</li>
+                        <li onClick={()=>navigate("/About")} >About</li>
                     </ul>
                 </nav>
              </div>

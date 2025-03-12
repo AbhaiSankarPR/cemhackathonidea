@@ -1,0 +1,35 @@
+.volunteer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+}
+.container-volunteer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65dvw;
+    height: 50dvh;
+    /* font-family:"Poppins", sans-serif; */
+    font-size: "Poppins", sans-serif;
+    font-size: 4dvh;
+    font-weight: 800;
+}
+.volunteer-elements{
+    height: 90%;
+    width: 18dvw;
+    font-size: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    gap: 5dvh;
+    font-size:4dvh;
+    cursor: pointer;
+}
+.volunteer-elements svg{
+    fill: rgb(2, 2, 2);
+    height: 25dvh;
+    width: 19dvw;
+}

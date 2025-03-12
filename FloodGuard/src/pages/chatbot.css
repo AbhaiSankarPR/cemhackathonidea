@@ -26,13 +26,26 @@
     fill: black;
 
 }
-.chatbotpage .chatarea{
-    background-color: rgb(255, 255, 255);
-    right: 0;
-    width: 70dvw;
-    margin: 6dvh 3dvh;
-    border-radius: 3dvh;
-    height: 80%;
-    
-
+.chatbotpage .chatarea {
+    background-color: #fff;
+    width: 70vw; 
+    margin: 6vh 3vh;
+    border-radius: 3vh;
+    height: 80vh; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem; 
+    overflow-y: auto; 
+}
+.input-area{
+    position: fixed;
+    left: 35dvw;
+    top:80%;
+   
+}
+.input-area input{
+    width: 46dvw;
+    height: 8dvh;
+    /* margin-bottom: 200px; */
+    border: none;
+    background-color: whitesmoke;
 }
