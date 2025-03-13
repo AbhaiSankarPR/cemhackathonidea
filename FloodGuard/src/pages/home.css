@@ -1,0 +1,9 @@
+#home {
+    background-image: url("../assets/WhatsApp Image 2025-03-12 at 6.29.43 PM.jpeg");
+    border-color: aqua;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100dvh;
+    width: 100dvw;
+}

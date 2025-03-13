@@ -1,0 +1,101 @@
+.taskpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+    flex-direction: column;
+}
+
+.taskpage .container {
+    display: flex;
+    justify-content: space-between;
+    width: 80dvw;
+    height: 70dvh;
+    background: #968d8d91;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.taskpage .chatai {
+    width: 20dvw;
+    padding: 3dvh;
+    font-size: 4dvh;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+
+.chatai svg {
+    fill: black;
+}
+
+.taskpage .chatarea {
+    background-color: #fff;
+    width: 70vw;
+    margin: 6vh 3vh;
+    border-radius: 3vh;
+    height: 80vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.task-item {
+    background: #e0e0e0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel-btn {
+    background: rgba(221, 26, 26, 0.856);
+    color: white;
+    border: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background: darkred;
+}
+
+.input-area {
+    position: fixed;
+    left: 35dvw;
+    top: 80%;
+    display: flex;
+    gap: 10px;
+}
+
+.input-area input {
+    width: 40dvw;
+    height: 8dvh;
+    border: none;
+    color: black;
+    background-color: whitesmoke;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.input-area button {
+    padding: 10px 20px;
+    background: #3c3e3fd5;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.input-area button:hover {
+    background: #292727ea;
+}

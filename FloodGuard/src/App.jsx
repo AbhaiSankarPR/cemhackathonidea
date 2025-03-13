@@ -14,6 +14,7 @@ import TaskList from "./pages/TaskList.jsx";
 import About from "./pages/About.jsx";
 import Loading from "./styles/Loading";  // Import Loading component
 import Register from "./pages/Registers.jsx";
+import MissingList from "./pages/MissingList.jsx";
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -43,6 +44,8 @@ function App() {
                         <Route path="/tasklist" element={<TaskList />} />
                         <Route path="/About" element={<About />} />
                         <Route path="/community" element={<Community/>}/>
+                        <Route path="/missinglist" element={<MissingList />} />
+
                     </Routes>
                 </Router>
             )}
