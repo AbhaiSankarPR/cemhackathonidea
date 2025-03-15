@@ -1,5 +1,5 @@
 import React from "react";
-import "./Floodmap.css";
+import "./floodmap.css";
 
 function Floodmap() {
     return (
