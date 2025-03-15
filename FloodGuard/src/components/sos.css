@@ -1,6 +1,6 @@
 .sos {
     color: red;
-    position: fixed; /* Ensures it stays in the bottom-left even when scrolling */
+    position: fixed; 
     background-color: rgb(172, 176, 180);
     font-size: 30px;
     height: 15dvh;
@@ -20,4 +20,20 @@
 .sos:hover {
     background-color: rgba(196, 0, 0, 0.822);
     color: white;
+}
+@media(max-width:600px){
+    .sos {
+        color: red;
+        position: fixed;
+        background-color: rgb(172, 176, 180);
+        font-size: 30px;
+        height: 12dvh;
+        width: 12dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40%;
+        bottom:5dvh;
+        left: 2dvw;
+    }
 }

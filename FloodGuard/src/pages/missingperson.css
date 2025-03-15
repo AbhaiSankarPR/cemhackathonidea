@@ -27,3 +27,36 @@
 .missing-elements svg{
    fill: #000000;
 }
+@media (max-width: 800px) {
+    .missingpersonpage{
+        height: 90dvh;
+        width: 90dvw;
+    }
+    .missing-elements{
+        gap: 0.5dvh;
+        font-size:3dvh;
+        cursor: pointer;
+    }
+    .container-missing{
+        width: 85dvw;
+        height: 60dvh;
+    }
+}
+@media (max-width: 300px) {
+    .missingpersonpage{
+        height: 90dvh;
+        width: 90dvw;
+    }
+    .missing-elements{
+        gap: 0.5dvh;
+        font-size:2dvh;
+        width:35dvw;
+        height: 40dvh;
+        padding: 3dvh;
+        cursor: pointer;
+    }
+    .container-missing{
+        width: 85dvw;
+        height: 60dvh;
+    }
+}

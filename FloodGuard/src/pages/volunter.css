@@ -11,7 +11,6 @@
     align-items: center;
     width: 65dvw;
     height: 50dvh;
-    /* font-family:"Poppins", sans-serif; */
     font-size: "Poppins", sans-serif;
     font-size: 4dvh;
     font-weight: 800;
@@ -32,4 +31,37 @@
     fill: rgb(2, 2, 2);
     height: 25dvh;
     width: 19dvw;
+}
+@media (max-width: 800px) {
+    .volunteer{
+        height: 90dvh;
+        width: 90dvw;
+    }
+    .volunteer-elements{
+        gap: 0.5dvh;
+        font-size:3dvh;
+        cursor: pointer;
+    }
+    .container-volunteer{
+        width: 85dvw;
+        height: 60dvh;
+    }
+}
+@media (max-width: 300px) {
+    .volunteer{
+        height: 90dvh;
+        width: 90dvw;
+    }
+    .volunteer-elements{
+        gap: 0.5dvh;
+        font-size:2dvh;
+        width:35dvw;
+        height: 40dvh;
+        padding: 3dvh;
+        cursor: pointer;
+    }
+    .container-volunteer{
+        width: 85dvw;
+        height: 60dvh;
+    }
 }

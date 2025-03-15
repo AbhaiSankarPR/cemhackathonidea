@@ -10,17 +10,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 1dvh; 
-    margin : 0.5dvh 0.6dvw;/* Increase side padding */
+    margin : 0.5dvh 0.6dvw;
     font-size: 22px;
-    /* z-index: 600; */
 }
 
-/* Logo */
 .home_header .logo {
     cursor: pointer;
 }
 
-/* Navigation Links */
 .nav-links {
     display: flex;
 }
@@ -39,16 +36,14 @@
 }
 
 .nav-links li:hover {
-    color: #444; /* Slight darkening effect on hover */
+    color: #444; 
 }
 
-/* Hide Menu Icon on Large Screens */
 .menu-icon {
     display: none;
     cursor: pointer;
 }
 
-/* Responsive Styles for Small Screens */
 @media (max-width: 800px) {
     .menu-icon {
         display: block;
@@ -58,9 +53,9 @@
     .nav-links {
         display: none;
         position: absolute;
-        top: 10dvh;
+        top: 12dvh;
         left: 0;
-        width: 100%;
+        width: 80%;
         background-color: rgba(156, 147, 147, 0.9);
         text-align: center;
         transition: max-height 0.4s ease-in-out;
@@ -71,7 +66,8 @@
     .nav-links.open {
         display: flex;
         flex-direction: column;
-        max-height: 50dvh; /* Smooth dropdown effect */
+        max-height:300dvh; 
+        height:700%;
         padding: 2dvh 0;
     }
 
