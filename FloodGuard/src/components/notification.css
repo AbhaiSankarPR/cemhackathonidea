@@ -13,6 +13,7 @@
     border-radius: 5px;
     background-color: #999999a2;
     color: rgb(12, 12, 12);
+    
 }
 .notification h3{
     margin: 0;
@@ -47,13 +48,27 @@
     .notification{    
         top: 8dvh;
         margin: 40px;
-        max-height:10dvh;
+        max-height:80%;
         margin-right:5px;
-        width: 60dvw;
+        width: 75%;
+        overflow-y: hidden;
     }
     .notification .updates{
         margin:1px;
         padding: 1.5px;
-        font-size: 12px;
+        font-size: 11px;
+    }
+}
+@media (max-height:550px) {
+    .notification{    
+        top: 5dvh;
+        margin-right:0px;
+        width: 79%;
+        overflow-y: hidden;
+    }
+    .notification .updates{
+        margin:1px;
+        padding: 0.5px;
+        font-size: 10px;
     }
 }

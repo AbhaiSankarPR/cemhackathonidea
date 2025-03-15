@@ -1,28 +1,98 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import './header.css';
-function whichmenu(){
-    
-}
 
 function Header() {
     const navigate = useNavigate();
+    const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const isHomePage = location.pathname != "/";
+    const isActive = (path) => (location.pathname === path ? "active" : "");
 
     
     return (
-        <header className="home_header">
-            {/* Logo */}
+        <header className={`home_header ${isHomePage ? "white-header" : ""}`}>
             <div className="logo" onClick={() => navigate("/")}>
-                <h3>FloodGuard</h3>
-            </div>
+                {/* <h3>FloodGuard</h3> */}
+                {/* <img src='../assets/FloodGuard.svg' alt="Floodguard Logo" /> */}
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="300.000000pt" height="217.000000pt" viewBox="0 0 300.000000 217.000000"
+                preserveAspectRatio="xMidYMid meet">
 
-            {/* Menu Button (SVG Icon) - Only for Small Screens */}
+                <g transform="translate(0.000000,217.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                <path d="M1060 1830 c-14 -11 -28 -20 -33 -20 -4 0 -44 -22 -88 -50 -44 -27
+                -83 -50 -85 -50 -2 0 -41 -22 -85 -50 -44 -27 -82 -50 -84 -50 -2 0 -40 -22
+                -84 -50 -44 -27 -83 -50 -86 -50 -2 0 -28 -15 -58 -32 -29 -18 -61 -38 -72
+                -44 -18 -10 -19 -26 -16 -430 3 -397 6 -444 31 -444 3 0 164 -89 356 -198
+                l350 -198 355 208 c194 114 357 208 361 208 17 0 7 17 -17 28 -22 10 -54 -6
+                -357 -185 -183 -107 -337 -195 -343 -196 -9 0 -123 64 -570 318 l-110 63 -3
+                395 -2 396 82 47 c120 68 136 77 211 122 37 23 69 42 71 42 3 0 41 23 85 50
+                44 28 83 50 86 50 2 0 29 16 60 35 30 20 61 38 69 41 7 3 95 -42 196 -101 100
+                -58 184 -105 185 -105 2 0 70 -38 151 -85 81 -47 152 -85 159 -85 6 0 19 6 29
+                13 16 12 -17 33 -305 196 -178 101 -341 194 -361 207 -45 29 -46 29 -78 4z"/>
+                <path d="M774 1571 l-319 -187 -3 -376 -2 -376 29 -21 c16 -12 31 -21 34 -21
+                3 0 38 -19 79 -43 40 -24 98 -57 128 -74 93 -51 151 -84 266 -149 61 -35 114
+                -64 118 -64 4 0 87 47 184 104 97 57 193 113 212 124 56 31 245 144 249 148 2
+                2 2 6 -1 9 -6 6 -111 -48 -138 -70 -8 -7 -35 -24 -60 -37 -91 -51 -125 -70
+                -135 -78 -5 -4 -27 -17 -47 -29 -76 -42 -105 -59 -181 -105 -42 -26 -81 -46
+                -86 -44 -5 2 -149 82 -319 178 l-309 175 -7 363 c-5 200 -6 365 -4 366 32 28
+                636 372 643 366 6 -4 35 -21 65 -37 99 -54 154 -85 210 -118 53 -32 96 -55
+                210 -118 30 -17 72 -41 92 -54 38 -23 58 -29 58 -15 0 4 -121 75 -267 157
+                -147 83 -292 164 -323 182 l-56 32 -320 -188z"/>
+                <path d="M936 1330 c14 -28 36 -62 49 -76 28 -31 125 -223 125 -250 0 -5 11
+                -31 25 -58 26 -52 33 -92 14 -80 -15 9 -2 -33 21 -66 9 -14 15 -31 13 -37 -3
+                -7 -1 -13 4 -13 5 0 24 -20 42 -45 18 -25 35 -45 39 -45 10 0 31 48 24 54 -11
+                12 -9 72 4 98 19 36 18 58 -2 58 -13 0 -15 7 -11 33 3 18 3 45 0 60 -4 22 -8
+                25 -23 17 -10 -6 -23 -10 -28 -10 -13 0 -21 73 -9 81 5 4 -1 15 -12 26 -13 12
+                -19 26 -15 36 4 12 1 17 -14 17 -15 0 -19 5 -15 20 4 15 0 20 -15 20 -30 0
+                -36 17 -12 30 17 9 19 14 9 26 -6 8 -17 14 -24 14 -33 0 -101 42 -144 89 -60
+                65 -78 66 -45 1z m238 -304 c5 -34 16 -57 37 -77 16 -15 29 -37 29 -48 0 -11
+                5 -23 10 -26 15 -9 12 -52 -6 -69 -20 -20 -38 -21 -30 0 3 8 2 12 -4 9 -6 -4
+                -10 9 -10 32 -1 38 -12 74 -69 216 -40 100 -39 110 3 56 21 -29 36 -61 40 -93z"/>
+                <path d="M1694 1241 c-2 -2 -4 -49 -4 -103 l0 -98 26 0 c24 0 26 3 22 43 l-3
+                42 63 3 c54 3 62 6 62 22 0 18 -6 20 -62 17 -57 -2 -63 0 -63 18 0 18 8 20 68
+                23 59 3 67 5 67 22 0 18 -7 20 -86 17 -47 -1 -88 -4 -90 -6z"/>
+                <path d="M1897 1243 c-3 -4 -5 -52 -6 -105 l-2 -98 91 0 c83 0 90 1 90 20 0
+                18 -7 20 -69 20 l-69 0 1 82 c2 70 -1 83 -15 86 -9 2 -18 -1 -21 -5z"/>
+                <path d="M2102 1238 c-15 -15 -16 -136 -2 -172 9 -25 13 -26 89 -26 63 0 80 3
+                85 16 11 29 7 169 -6 182 -16 16 -150 16 -166 0z m138 -93 l0 -65 -55 0 -55 0
+                0 65 0 65 55 0 55 0 0 -65z"/>
+                <path d="M2322 1238 c-7 -7 -12 -43 -12 -93 0 -50 5 -86 12 -93 7 -7 41 -12
+                83 -12 42 0 76 5 83 12 7 7 12 43 12 93 0 50 -5 86 -12 93 -16 16 -150 16
+                -166 0z m138 -93 l0 -65 -55 0 -55 0 0 65 0 65 55 0 55 0 0 -65z"/>
+                <path d="M2530 1145 l0 -105 83 0 c51 0 88 5 95 12 7 7 12 39 12 74 0 58 -2
+                64 -35 93 -31 27 -43 31 -95 31 l-60 0 0 -105z m127 43 c17 -16 23 -32 23 -65
+                l0 -43 -55 0 -55 0 0 65 0 65 32 0 c19 0 41 -9 55 -22z"/>
+                <path d="M1702 968 c-19 -19 -16 -162 4 -182 19 -20 144 -22 162 -4 7 7 12 34
+                12 60 l0 48 -45 0 c-38 0 -45 -3 -45 -20 0 -15 7 -20 25 -20 19 0 25 -5 25
+                -21 0 -18 -5 -20 -51 -17 l-51 3 -1 60 -1 60 52 3 c32 2 52 -1 52 -7 0 -6 9
+                -11 21 -11 16 0 20 5 17 28 -3 27 -4 27 -83 30 -54 2 -84 -1 -93 -10z"/>
+                <path d="M1918 883 c3 -57 9 -101 16 -105 18 -13 141 -9 154 4 8 8 12 46 12
+                105 0 86 -1 93 -20 93 -18 0 -20 -7 -20 -86 l0 -85 -52 3 -53 3 4 83 c3 81 2
+                82 -21 82 -24 0 -24 0 -20 -97z"/>
+                <path d="M2163 950 c-32 -28 -33 -33 -33 -105 0 -68 2 -75 20 -75 16 0 20 7
+                20 36 l0 35 53 -3 c50 -3 52 -4 52 -33 1 -23 6 -31 23 -33 22 -3 22 -1 22 102
+                l0 106 -62 0 c-56 -1 -67 -4 -95 -30z m115 -42 c-3 -32 -4 -33 -55 -36 -44 -3
+                -53 0 -53 14 0 26 40 54 77 54 33 0 34 -2 31 -32z"/>
+                <path d="M2350 875 c0 -98 1 -105 20 -105 16 0 20 7 20 35 0 32 2 35 30 35 27
+                0 80 -41 80 -62 0 -5 9 -8 20 -8 23 0 27 29 8 48 -10 10 -10 17 0 32 15 25 16
+                102 0 118 -7 7 -44 12 -95 12 l-83 0 0 -105z m148 33 c-3 -32 -4 -33 -55 -36
+                l-53 -3 0 35 0 36 56 0 55 0 -3 -32z"/>
+                <path d="M2569 976 c-2 -2 -3 -50 -1 -105 l3 -101 78 0 c46 0 82 5 89 12 7 7
+                12 40 12 76 0 57 -3 67 -29 93 -26 25 -37 29 -89 29 -32 0 -61 -2 -63 -4z
+                m123 -53 c13 -11 18 -30 18 -65 l0 -49 -51 3 -52 3 1 58 c0 31 1 59 1 62 2 12
+                66 3 83 -12z"/>
+                </g>
+                </svg>
+
+                </div>
+
             <div className="menu-icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 {isMenuOpen ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> // Close (X) icon
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#141414"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> // Close (X) icon
                 ) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#141414">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
                 </svg>// Hamburger menu icon
                 )}
@@ -31,11 +101,11 @@ function Header() {
             {/* Navigation Links */}
             <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
                 <ul>
-                    <li onClick={() =>{ navigate("/Floodmap"); setIsMenuOpen(!isMenuOpen);}}>Live Flood Map</li>
-                    <li onClick={() => {navigate("/MissingPerson"); setIsMenuOpen(!isMenuOpen);}}>Missing Person</li>
-                    <li onClick={() => {navigate("/Volunteer"); setIsMenuOpen(!isMenuOpen);}}>Volunteer</li>
+                    <li className={isActive("/Floodmap")} onClick={() =>{ navigate("/Floodmap"); setIsMenuOpen(!isMenuOpen);}}>Live Flood Map</li>
+                    <li className={isActive("/MissingPerson")} onClick={() => {navigate("/MissingPerson"); setIsMenuOpen(!isMenuOpen);}}>Missing Person</li>
+                    <li className={isActive("/Volunteer")} onClick={() => {navigate("/Volunteer"); setIsMenuOpen(!isMenuOpen);}}>Volunteer</li>
                     <li>Donate</li>
-                    <li onClick={() => {navigate("/About"); setIsMenuOpen(!isMenuOpen);}}>About</li>
+                    <li className={isActive("/About")} onClick={() => {navigate("/About"); setIsMenuOpen(!isMenuOpen);}}>About</li>
                 </ul>
             </nav>
         </header>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
 #home {
     background-image: url("../assets/WhatsApp Image 2025-03-12 at 6.29.43 PM.jpeg");
     border-color: aqua;
@@ -6,4 +7,24 @@
     background-repeat: no-repeat;
     height: 100dvh;
     width: 100dvw;
+}
+.detailhome{
+    position:relative;
+    top:20%;
+    width: 70dvw;
+    padding: 5dvw;
+    margin: 1dvh;  
+    font-size: 20px;
+    font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    border-radius: 25px;
+    margin-left: 7dvw;
+    background-color: rgba(240, 248, 255, 0.623);
+}
+@media(max-width:300px){
+   #home{ 
+    overflow-x: hidden;
+    }
 }
