@@ -104,7 +104,7 @@ function Header() {
                     <li className={isActive("/Floodmap")} onClick={() =>{ navigate("/Floodmap"); setIsMenuOpen(!isMenuOpen);}}>Live Flood Map</li>
                     <li className={isActive("/MissingPerson")} onClick={() => {navigate("/MissingPerson"); setIsMenuOpen(!isMenuOpen);}}>Missing Person</li>
                     <li className={isActive("/Volunteer")} onClick={() => {navigate("/Volunteer"); setIsMenuOpen(!isMenuOpen);}}>Volunteer</li>
-                    <li>Donate</li>
+                    <li className={isActive("/About")} onClick={() => {navigate("/Donate"); setIsMenuOpen(!isMenuOpen);}}>Donate</li>
                     <li className={isActive("/About")} onClick={() => {navigate("/About"); setIsMenuOpen(!isMenuOpen);}}>About</li>
                 </ul>
             </nav>
