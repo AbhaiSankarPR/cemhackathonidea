@@ -4,5 +4,6 @@ body{
     background: #fff;
     color: black;
     font-family:poppins;
+    user-select: none;
     /* background-color: #f5f5f5; */
 }
