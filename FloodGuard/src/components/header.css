@@ -46,6 +46,7 @@
     cursor: pointer;
     transition: color 0.3s ease;
     padding-bottom: 5px;
+    user-select: none;
 }
 
 .nav-links li::after {
